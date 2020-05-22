@@ -18,3 +18,12 @@
  * Domain Path: languages
  */
 
+// Exit if accessed directly.
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
+function neu_dash_admin_style() {
+  wp_enqueue_style('Neu dash style', plugins_url( basename( dirname( __FILE__ ) )).'/style.css');
+}
+add_action('admin_enqueue_scripts', 'neu_dash_admin_style');
