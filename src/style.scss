@@ -1,0 +1,100 @@
+@import './utils/function';
+
+html {
+  background-color: #243239;
+}
+
+body.neu_dash {
+  #adminmenuback {
+    display: none;
+  }
+  ul#adminmenu a.wp-has-current-submenu:after,
+  ul#adminmenu > li.current > a.current:after {
+    border: none !important;
+  }
+
+  --primary1: #182228;
+  --primary1-textColorOpposite: #182228;
+  --primary1-baseColor: #182228;
+  --primary1-darkColor: #131b1f;
+  --primary1-lightColor: #1d2931;
+  --primary1-firstGradientColor: #161f24;
+  --primary1-secondGradientColor: #1a242b;
+
+  --primary2: #243239;
+  --primary2-textColorOpposite: #243239;
+  --primary2-baseColor: #243239;
+  --primary2-darkColor: #1c272c;
+  --primary2-lightColor: #2c3d46;
+  --primary2-firstGradientColor: #202d33;
+  --primary2-secondGradientColor: #27363d;
+
+  --positionX: 6px;
+  --positionXOpposite: -6px;
+  --positionY: 6px;
+  --positionYOpposite: -6px;
+  --angle: 145deg;
+  --blur: 12px;
+  --textColor: #f6f5f7;
+
+  --radius: 20px;
+  --background: linear-gradient(
+    var(--angle),
+    var(--primary1-firstGradientColor),
+    var(--primary1-secondGradientColor)
+  );
+  --background2: linear-gradient(
+    var(--angle),
+    var(--primary2-firstGradientColor),
+    var(--primary2-secondGradientColor)
+  );
+  --box-shadow: var(--positionX) var(--positionY) var(--blur)
+      var(--primary2-darkColor),
+    var(--positionXOpposite) var(--positionYOpposite) var(--blur)
+      var(--primary2-lightColor);
+  // Typography
+  @for $i from 1 through 6 {
+    h#{$i} {
+      color: var(--textColor);
+    }
+  }
+  p {
+    color: var(--textColor);
+  }
+
+  #wpwrap {
+    background-color: var(--primary2);
+  }
+
+  #adminmenuwrap {
+    border-radius: var(--radius);
+    background: var(--background);
+    box-shadow: var(--box-shadow);
+    width: 124px;
+    left: 14px;
+    top: 50px;
+
+    #adminmenu {
+      background-color: transparent;
+      margin: 18px 0;
+      width: 100%;
+      .wp-submenu.wp-submenu-wrap {
+        background: var(--background2);
+      }
+      .wp-has-current-submenu .wp-submenu {
+        left: auto;
+      }
+      .wp-submenu {
+        left: 124px;
+        width: 100%;
+      }
+      .wp-submenu.wp-submenu-wrap {
+        width: 100%;
+      }
+    }
+  }
+
+  #wpadminbar {
+    background: var(--background);
+  }
+}
