@@ -5,6 +5,10 @@
 
 > Neumorphism style admin dashboard for Wordpress
 
+<p align="center">
+<img src="asset/example-min.png">
+</p>
+
 ## Author
 
 👤 **Hansanghyeon**
