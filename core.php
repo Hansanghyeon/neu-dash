@@ -9,7 +9,7 @@
  * Plugin Name: Neu dash
  * Plugin URI: https://github.com/Hansanghyeon
  * Description: My First Plugin, Neumorphism style admin dashboard for Wordpress
- * Version: 1.0
+ * Version: 0.0.1
  * Author: Hansanghyeon
  * Author URI: https://github.com/Hansanghyeon
  * License: GPL2
@@ -23,7 +23,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+add_filter('admin_body_class', function( $classes ) {
+  $classes .= ' neu_dash ';
+  return $classes;
+});
+
 function neu_dash_admin_style() {
-  wp_enqueue_style('Neu dash style', plugins_url( basename( dirname( __FILE__ ) )).'/style.css');
+  wp_enqueue_style('Neu dash style', plugins_url( basename( dirname( __FILE__ ) )).'/style.min.css');
 }
 add_action('admin_enqueue_scripts', 'neu_dash_admin_style');
