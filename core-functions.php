@@ -6,9 +6,9 @@
  * @copyright Copyright(c) 2020, Hansanghyeon
  * @license http://opensource.org/licenses/GPL-2.0 GNU General Public License, version 2 (GPL-2.0)
  * 
- * Plugin Name: Neumorphism style admin dashboard for Wordpress
- * Plugin URI: http://www.mywebsite.com/my-first-plugin
- * Description: My First Plugin, Neumorphism wp admin dashboard
+ * Plugin Name: Neu dash
+ * Plugin URI: https://github.com/Hansanghyeon
+ * Description: My First Plugin, Neumorphism style admin dashboard for Wordpress
  * Version: 1.0
  * Author: Hansanghyeon
  * Author URI: https://github.com/Hansanghyeon
