@@ -7,7 +7,7 @@
  * @license http://opensource.org/licenses/GPL-2.0 GNU General Public License, version 2 (GPL-2.0)
  * 
  * Plugin Name: Neu dash
- * Plugin URI: https://github.com/Hansanghyeon
+ * Plugin URI: https://github.com/Hansanghyeon/neu-dash
  * Description: My First Plugin, Neumorphism style admin dashboard for Wordpress
  * Version: 0.0.1
  * Author: Hansanghyeon
