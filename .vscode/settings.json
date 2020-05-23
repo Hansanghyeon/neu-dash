@@ -10,7 +10,7 @@
     {
       "format": "compressed",
       "extensionName": ".min.css",
-      "savePath": "./",
+      "savePath": "./neu-dash-plugin",
     }
   ],
   "liveSassCompile.settings.autoprefix": [
