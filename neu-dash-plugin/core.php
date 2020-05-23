@@ -29,6 +29,10 @@ add_filter('admin_body_class', function( $classes ) {
 });
 
 function neu_dash_admin_style() {
-  wp_enqueue_style('Neu dash style', plugins_url( basename( dirname( __FILE__ ) )).'/style.min.css');
+  if (! is_dir(WPMU_PLUGIN_URL.'/'.basename( dirname( __FILE__ ) ))) {
+    wp_enqueue_style('Neu dash style', WPMU_PLUGIN_URL.'/'.basename( dirname( __FILE__ ) ).'/style.min.css');
+  } else {
+    wp_enqueue_style('Neu dash style', plugins_url( basename( dirname( __FILE__ ) )).'/style.min.css');
+  }
 }
 add_action('admin_enqueue_scripts', 'neu_dash_admin_style');
