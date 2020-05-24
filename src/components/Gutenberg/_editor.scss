@@ -1,0 +1,64 @@
+@import '../../utils/function';
+
+.block-editor__container {
+  --radius: 8px;
+}
+
+// 툴바
+.block-editor-editor-skeleton__header {
+  border-bottom: none;
+  margin-bottom: 1rem;
+
+  .edit-post-header {
+    background: var(--background);
+    border-radius: 0 0 var(--radius) var(--radius);
+  }
+}
+
+// 에디터 내부
+
+.editor-post-title .editor-post-title__block {
+  margin: auto;
+}
+.editor-post-title__input {
+  color: var(--headingColor);
+}
+
+// 사이드바
+.block-editor-editor-skeleton__sidebar {
+  border-left: none;
+  background: transparent;
+  > div,
+  .edit-post-sidebar {
+    height: auto;
+  }
+  .edit-post-sidebar {
+    border-radius: var(--radius) 0 0 var(--radius);
+    .components-button:not(:disabled):not([aria-disabled='true']):not(.is-secondary):not(.is-primary):not(.is-tertiary):not(.is-link):hover {
+      background-color: transparent;
+    }
+    .components-panel {
+      background: var(--background);
+      border: none;
+      &__body {
+        background-color: transparent;
+        border: none;
+        button {
+          background-color: transparent !important;
+          color: var(--textColor) !important;
+          svg {
+            fill: var(--textColor) !important;
+          }
+          &:hover {
+            color: var(--textColor) !important;
+          }
+        }
+        &-title {
+          &:hover {
+            background-color: initial !important;
+          }
+        }
+      }
+    }
+  }
+}

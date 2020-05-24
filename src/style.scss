@@ -102,4 +102,6 @@ body.neu_dash {
   #wpadminbar {
     background: var(--background);
   }
+
+  @import './components/Gutenberg/index';
 }
