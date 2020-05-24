@@ -83,8 +83,11 @@ body.neu_dash {
       .wp-submenu.wp-submenu-wrap {
         background: var(--background2);
       }
-      .wp-has-current-submenu .wp-submenu {
-        left: auto;
+      .wp-has-current-submenu {
+        background: var(--background2);
+        .wp-submenu {
+          left: auto;
+        }
       }
       .wp-submenu {
         left: 124px;
