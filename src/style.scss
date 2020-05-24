@@ -35,7 +35,7 @@ body.neu_dash {
   --positionYOpposite: -6px;
   --angle: 145deg;
   --blur: 12px;
-  --textColor: #f6f5f7;
+  --textColor: #eee;
 
   --radius: 20px;
   --background: linear-gradient(
@@ -52,7 +52,9 @@ body.neu_dash {
       var(--primary2-darkColor),
     var(--positionXOpposite) var(--positionYOpposite) var(--blur)
       var(--primary2-lightColor);
+
   // Typography
+  --headingColor: #f6f5f7;
   @for $i from 1 through 6 {
     h#{$i} {
       color: var(--textColor);
