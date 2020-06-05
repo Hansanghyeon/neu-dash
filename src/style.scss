@@ -97,4 +97,6 @@ body.neu_dash {
   #wpadminbar {
     background: var(--background);
   }
+  // 대쉬 보드
+  @import './components/dashboard';
 }
