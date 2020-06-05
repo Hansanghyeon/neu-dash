@@ -1,0 +1,47 @@
+#dashboard-widgets-wrap {
+  @for $i from 1 through 6 {
+    h#{$i} {
+      color: var(--textColor);
+    }
+  }
+  .activity-block,
+  .community-events-footer {
+    border: 0;
+  }
+  .activity-block {
+    li[class*='event'] {
+      background: var(--background2);
+      border-top: 0;
+      color: var(--textColor);
+    }
+  }
+  .postbox {
+    --radius: 16px;
+    background: var(--background);
+    border-radius: var(--radius);
+    border: none;
+
+    .inside {
+      padding-bottom: 4px;
+    }
+    .ui-sortable-handle {
+      border-bottom: 1px soild var(--primary2);
+    }
+    #activity-widget #the-comment-list .comment-item {
+      background: var(--background2);
+      border-bottom: 0;
+      &:first-child {
+        box-shadow: none;
+      }
+    }
+  }
+  #dashboard_activity .subsubsub {
+    border: 0;
+  }
+  input,
+  textarea {
+    background: var(--background2);
+    color: var(--textColor);
+    border: 0;
+  }
+}
