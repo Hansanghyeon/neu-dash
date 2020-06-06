@@ -1,0 +1,11 @@
+@import '../../utils/function';
+
+.block-editor-editor-skeleton__header {
+  border-bottom: none;
+  margin-bottom: 1rem;
+
+  .edit-post-header {
+    background: var(--background);
+    border-radius: 0 0 var(--radius) var(--radius);
+  }
+}
