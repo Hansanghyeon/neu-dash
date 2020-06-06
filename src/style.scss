@@ -102,6 +102,7 @@ body.neu_dash {
   #wpadminbar {
     background: var(--background);
   }
-
   @import './components/Gutenberg/index';
+  // 대쉬 보드
+  @import './components/dashboard';
 }
